@@ -44,12 +44,12 @@ def generate_feature_set(df: pd.DataFrame, fs: dict, config: dict, model_store: 
         features = generate_features_itblib(f_df, gen_config, last_rows=last_rows)
     elif generator == "depth":
         features = generate_features_depth(f_df)
-    elif generator == "tsfresh":
-        features = generate_features_tsfresh(f_df, gen_config, last_rows=last_rows)
-    elif generator == "talib":
-        features = generate_features_talib(f_df, gen_config, last_rows=last_rows)
-    elif generator == "itbstats":
-        features = generate_features_itbstats(f_df, gen_config, last_rows=last_rows)
+    # elif generator == "tsfresh":
+    #     features = generate_features_tsfresh(f_df, gen_config, last_rows=last_rows)
+    # elif generator == "talib":
+    #     features = generate_features_talib(f_df, gen_config, last_rows=last_rows)
+    # elif generator == "itbstats":
+    #     features = generate_features_itbstats(f_df, gen_config, last_rows=last_rows)
 
     # Labels
     elif generator == "highlow":
